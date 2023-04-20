@@ -41,11 +41,6 @@ const EmotionalGraph = (props: Props) => {
                     <EmotionalBar value={props.emotion.negative / total} emotion={"👎"} color={"gray"} label={"negative"}/>
                 </div>
             </div>
-            <span className={"bg-red-100"}>I</span>
-            <span className={"bg-orange-100"}>I</span>
-            <span className={"bg-yellow-100"}>I</span>
-            <span className={"bg-green-100"}>I</span>
-            <span className={"bg-gray-100"}>I</span>
 
             <div className={"w-full flex justify-center mt-3"}>
                 <span className={"font-semibold mr-3"}>Total results : </span>
