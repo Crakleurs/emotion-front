@@ -36,11 +36,16 @@ const EmotionalGraph = (props: Props) => {
                 </div>
 
                 <div className={"flex space-x-8"}>
-                    <EmotionalBar value={props.emotion.positive / total} emotion={"👍"} color={"orange"} label={"positive"}/>
-                    <EmotionalBar value={props.emotion.neutral / total} emotion={"😐"} color={"orange"} label={"neutral"}/>
-                    <EmotionalBar value={props.emotion.negative / total} emotion={"👎"} color={"orange"} label={"negative"}/>
+                    <EmotionalBar value={props.emotion.positive / total} emotion={"👍"} color={"gray"} label={"positive"}/>
+                    <EmotionalBar value={props.emotion.neutral / total} emotion={"😐"} color={"gray"} label={"neutral"}/>
+                    <EmotionalBar value={props.emotion.negative / total} emotion={"👎"} color={"gray"} label={"negative"}/>
                 </div>
             </div>
+            <span className={"bg-red-100"}></span>
+            <span className={"bg-orange-100"}></span>
+            <span className={"bg-yellow-100"}></span>
+            <span className={"bg-green-100"}></span>
+            <span className={"bg-gray-100"}></span>
 
             <div className={"w-full flex justify-center mt-3"}>
                 <span className={"font-semibold mr-3"}>Total results : </span>
