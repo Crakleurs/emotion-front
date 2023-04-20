@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {CampaignEntity} from "../types/campaing-types";
+import {CampaignEntity} from "../types/campaign-types";
 import {getCampaign} from "../requests/campaign-requests";
 import {toast} from "react-toastify";
 

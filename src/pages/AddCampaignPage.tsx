@@ -1,6 +1,6 @@
 import React, {FC, FormEvent} from "react";
 import useForm from "../hooks/useForm";
-import {CampaignInput} from "../types/campaing-types";
+import {CampaignInput} from "../types/campaign-types";
 import {toast} from "react-toastify";
 import {createCampaign} from "../requests/campaign-requests";
 

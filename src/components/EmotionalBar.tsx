@@ -1,8 +1,10 @@
-import {FC} from "react";
+import {FC, useState} from "react";
 
 type Props = {
-    value: number,
-    emotion: string,
+    value: number;
+    emotion: string;
+    color: string;
+    label: string;
 }
 
 const EmotionalBar: FC<Props> = (props) => {
@@ -13,12 +15,14 @@ const EmotionalBar: FC<Props> = (props) => {
         <div className={"flex flex-col"}>
             <span className={"mt-3"}>{100 - value + "%"}</span>
 
-            <div className={"h-64 w-8 bg-red-200 mx-auto rounded"} >
+            <div className={"h-64 w-8 bg-" + props.color + "-200 mx-auto rounded"} >
                 <div style={{height: height}} className={"bg-gray-500 w-full rounded-t"}>
                 </div>
             </div>
             <span></span>
-            <span className={"mt-3"}>{props.emotion}</span>
+            <div className="tooltip mt-3" data-tip={props.label}>
+                <span className={"mt-3"}>{props.emotion}</span>
+            </div>
         </div>
     )
 }

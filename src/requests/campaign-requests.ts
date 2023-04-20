@@ -1,5 +1,5 @@
 import axios from "axios";
-import {CampaignEntity, CampaignInput} from "../types/campaing-types";
+import {CampaignEntity, CampaignInput} from "../types/campaign-types";
 
 const getCampaigns = async () => {
 
